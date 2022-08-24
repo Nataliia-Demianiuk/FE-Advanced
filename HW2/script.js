@@ -1,27 +1,29 @@
 let N;
-while (!Number(N)){
+while (!(N % 1 === 0 && Number.isInteger(parseInt(N)))){
    N = prompt('Введіть число N', );
    console.log(N);
 }
 
 let M;
-while (!Number(M)){
-   M = prompt('Введіть число M', );
-   console.log(M);
-}
+while (!(M % 1 === 0 && Number.isInteger(parseInt(M)))){
+  M = prompt('Введіть число M', );    
+  console.log(M);
 
 while (Number(N) >= Number(M)) {
-  N = +prompt(`Ваше початкове число N є більшим або рівним кінцевому, введіть інше початкове число`);
-  M = +prompt(`Ваше кінцеве число M є меншим або рівним початковому, введіть інше кінцеве число`);
+  M = prompt(`Число М повинне бути більшим за число N. Будь ласка, введіть інше число М`);
 
 }
+}
+
+
+
 
 let booleanParametr = confirm("Чи хочете ви пропускати парні числа?");
 console.log(booleanParametr);
 
 let result = 0;
 for(let i = Number(N); i <= Number(M); i++){
-  if (booleanParametr && i % 2 == 0){  
+  if (booleanParametr && i % 2 === 0){  
     continue  
   }
   
