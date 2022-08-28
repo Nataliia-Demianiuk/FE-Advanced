@@ -1,11 +1,11 @@
 let N;
-while (!(N % 1 === 0 && Number.isInteger(parseInt(N)))){
+while (!(N % 1 === 0 && Number.isInteger(parseInt(N)) && N > 0 )){
    N = prompt('Введіть число N', );
    console.log(N);
 }
 
 let M;
-while (!(M % 1 === 0 && Number.isInteger(parseInt(M)))){
+while (!(M % 1 === 0 && Number.isInteger(parseInt(M)) && M > 0)){
   M = prompt('Введіть число M', );    
   console.log(M);
 
