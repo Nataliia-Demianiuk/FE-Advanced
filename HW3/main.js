@@ -1,7 +1,7 @@
 let firstValue;
 let secondValue; 
 let thirdValue;
-let fourthValue;
+
 while (!(firstValue % 1 === 0 && Number.isInteger(parseInt(firstValue)))){
    firstValue = prompt('Введіть перше значення ', );
  if (!(firstValue % 1 === 0 && Number.isInteger(parseInt(firstValue)))) {
@@ -22,19 +22,16 @@ while (!(thirdValue % 1 === 0 && Number.isInteger(parseInt(thirdValue)))){
       
       }
    }
-while (!(fourthValue % 1 === 0 && Number.isInteger(parseInt(fourthValue)))){
-   fourthValue = prompt('Введіть четверте значення', );
-      if (!(fourthValue % 1 === 0 && Number.isInteger(parseInt(fourthValue)))) {
-      alert("Це має бути ціле число");
-      
-      }
-   }
-
-console.log(firstValue, secondValue, thirdValue, fourthValue);
 
 
 
-function getMaxValue(...rest){
+console.log(firstValue, secondValue, thirdValue);
+
+
+
+
+
+function getMaxValue(rest){
    let currentValue = rest[0];
 
    for (let i = 0; i < rest.length; i++) {
@@ -45,7 +42,7 @@ function getMaxValue(...rest){
 
  return currentValue; 
 }
-const firstResult = getMaxValue(Number(firstValue), Number(secondValue), Number(thirdValue), Number(fourthValue));
+const firstResult = getMaxValue(firstValue);
 console.log(firstResult);
 
 
@@ -98,7 +95,7 @@ console.log(fourthResult);
 function getRandomNumber (min, max){
    return Math.floor(Math.random() * (max - min) + min);
 }
-const fifthResult = getRandomNumber (Number(fourthValue), Number(thirdValue));
+const fifthResult = getRandomNumber (Number(thirdValue), Number(firstValue));
 console.log(fifthResult);
 
 
@@ -121,5 +118,5 @@ document.writeln(`Найбільшим числом, які були введе�
 document.writeln(`Число ${firstValue} піднесене до ${secondValue} степеня дорівнює ${secondResult} <br>`);
 document.writeln(`Вами було введено ім'я ${thirdResult} <br>`);
 document.writeln(`Сума, що залишилася після оплати податку  від зарплати в ${thirdValue}грн дорівнює ${fourthResult}грн <br> `); 
-document.writeln(`Випадкове число в діапазоні від ${fourthValue} до ${thirdValue} є ${fifthResult} <br>`);
-document.writeln(`Чи ваше слово паліндром? Відповідь ${sixthResult} <br>`);
+document.writeln(`Випадкове число в діапазоні від ${thirdValue} до ${firstValue} є ${fifthResult} <br>`);
+document.writeln(`Чи ваше слово ${enterWord} є паліндром? Відповідь ${sixthResult} <br>`);
