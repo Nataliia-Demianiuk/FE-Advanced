@@ -3,7 +3,7 @@ let secondValue;
 let thirdValue;
 
 while (!(firstValue % 1 === 0 && Number.isInteger(parseInt(firstValue)))){
-   firstValue = prompt('Введіть число для знахождення найбільшої цифри ', );
+   firstValue = prompt('Введіть значення числа для знаходження найбільшої цифри ', );
  if (!(firstValue % 1 === 0 && Number.isInteger(parseInt(firstValue)))) {
    alert("Це має бути ціле число");
  } 
