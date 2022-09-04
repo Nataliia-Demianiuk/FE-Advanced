@@ -3,7 +3,7 @@ let secondValue;
 let thirdValue;
 
 while (!(firstValue % 1 === 0 && Number.isInteger(parseInt(firstValue)))){
-   firstValue = prompt('Введіть перше значення ', );
+   firstValue = prompt('Введіть число для знахождення найбільшої цифри ', );
  if (!(firstValue % 1 === 0 && Number.isInteger(parseInt(firstValue)))) {
    alert("Це має бути ціле число");
  } 
@@ -114,7 +114,7 @@ console.log(sixthResult);
 
 
 
-document.writeln(`Найбільшим числом, які були введені  є число ${firstResult} <br>`); 
+document.writeln(`Найбільшою цифрою з вашого числа  є  ${firstResult} <br>`); 
 document.writeln(`Число ${firstValue} піднесене до ${secondValue} степеня дорівнює ${secondResult} <br>`);
 document.writeln(`Вами було введено ім'я ${thirdResult} <br>`);
 document.writeln(`Сума, що залишилася після оплати податку  від зарплати в ${thirdValue}грн дорівнює ${fourthResult}грн <br> `); 
