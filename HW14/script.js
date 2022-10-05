@@ -14,7 +14,7 @@ getIdButtonEl.addEventListener("click", () => {
    });
 
 
-   const FONT_SIZE = 14;
+   const FONT_SIZE = 20;
    const fontGeneratorDecrementButtonEl = document.querySelector("#fontGenerator-button-decrement");
    const fontGeneratorIncrementButtonEl = document.querySelector("#fontGenerator-button-increment");
    const fontGeneratorResultEl = document.querySelector("#fontGenerator-result");
